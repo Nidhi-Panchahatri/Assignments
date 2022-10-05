@@ -1,0 +1,67 @@
+
+ASSIGNMENT-03
+
+
+
+1.Given a class named Patient, identify what instance methods could be written in this class.
+
+Class: Patient
+Instance methods:
+Patient name
+Age
+Contact details
+Address
+Diagnosis
+Medicines
+Bill
+ 
+
+ 
+2.Given a class named CPU, identify the public & private instance members. 
+
+CPU 
+
+Public:
+1.	Price
+2.	CPU version
+3.	Processor speed
+4.	Memory storage
+
+
+Private:
+1.	ALU
+2.	Control Unit
+3.	CPU model number
+4.	Architecture
+
+
+
+ 
+3.Given a class named Media, assume there are 3 objects of this class. Identify the static members of this class. 
+
+1.	Play
+2.	Pause
+3.	Fast forward
+4.	Rewind
+5.	Stop
+6.	Repeat on
+7.	Turn shuffle on/ off
+8.	Mute/ Unmute
+9.	Sound bar
+ 
+4.Given a class named Calculator & its derived classes named Standard and Scientific, identify the method which can be overridden by the derived classes. 
+
+The common features between standard and scientific are:
+1.	Addition
+2.	Subtraction
+3.	Division
+4.	Multiplication
+5.	Backspace
+6.	Clear all
+7.	Equals to
+8.	Percentage 
+
+ 
+5.Given the classes Bird, Superman, Aeroplane and Missile, identify the usage of interfaces here. 
+
+The classes bird, superman, aeroplane and missile have same features like all fly to travel from one place to another, they all fly at some certain height and their food is fuel but their way of flying and the height and speed at which they fl is different, even the food is different for all of them.
