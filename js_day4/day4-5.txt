@@ -1,0 +1,17 @@
+function GetVideo(){
+        console.log("Got Video");
+    }
+    function AddIntro(){
+        console.log("Add Intro");
+    }
+
+    async function AddSummary() {
+        let myPromise = new Promise(function(resolve) {
+          resolve("Add Summary");
+        });
+        await myPromise;
+      }
+    GetVideo();
+    AddIntro();
+    AddSummary();
+   
