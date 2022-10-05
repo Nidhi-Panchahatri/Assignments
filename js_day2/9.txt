@@ -1,0 +1,24 @@
+// 9.	Write a JS function which takes 3 arguments, namely arg1, arg2 and arg3. Call the function by passing an array of 3 elements to it. The function must return the maximum value from the array passed to it
+
+
+function max(a,b,c)
+{
+    a=inputarr[0]
+    b=inputarr[1];
+    c=inputarr[2];
+    if (a>b && a>c){
+        console.log(`the max number is ${a}`);
+
+    }
+    else if(b>c){
+        console.log(`the max number is ${b}`);
+
+    }
+    else{
+        console.log(`the max number is ${c}`);
+    }
+}
+
+inputarr=[300,76,4000];
+
+max(inputarr);

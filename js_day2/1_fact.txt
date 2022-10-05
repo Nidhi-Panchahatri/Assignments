@@ -1,0 +1,24 @@
+// 1.	Write a standard JS function which takes a number as an argument and returns its factorial.
+
+
+
+function factorial(num){
+    if(num==0){
+       console.log('The factoial of number is 1');
+    }
+    else if(num<0){
+        console.log('Invalid number/ factorial not possible');
+    
+    }
+    else{
+        for(var i=1;i<=num;i++){
+            fact=fact*i;
+            
+        }
+        
+    }
+    return fact;
+    }
+    var num=prompt("enter the no");
+    var fact=1;
+    console.log((factorial(num)));

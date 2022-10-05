@@ -1,0 +1,9 @@
+// 4.	Write a JS arrow function named Login() which takes a username and password. 
+// In case any of the arguments or both are not passed, the default values must be CT and CT respectively. 
+
+
+
+const login=(a='CT',b='CT')=> console.log(`username & password: ${a} ${b}`);
+login('nidhi','n123');
+login('nidhi');
+login();

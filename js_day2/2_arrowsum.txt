@@ -1,0 +1,5 @@
+// 2.	Write a JS arrow function which takes 2 numbers and returns their sum.
+
+
+const sum=(a,b)=> a+b;
+console.log('sum=' +(2,4));
