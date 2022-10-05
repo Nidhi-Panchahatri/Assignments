@@ -1,0 +1,88 @@
+ASSIGNMENT-DAY 2
+
+
+1.Given an entity named Television, identify its attributes and explain how will you do Abstraction? 
+
+
+Entity: Television
+
+Attributes: 
+1)	Height 
+2)	Width
+3)	Color
+4)	Type of TV
+5)	Screen resolution
+6)	Audio and video Ports
+
+In Television there are various internal attributes like processors, Memory Storage(RAM & ROM) etc., which are hidden because they are unnecessary data 
+i.e it hides all the implementation and exposes only required information to the user
+
+	     
+2.Given an entity named Hospital, explain Encapsulation with respect to it. 
+
+Entity: Hospital 
+It constitutes of 
+1)	Doctors
+2)	Nurses
+3)	Hospital Administration
+4)	Patients
+5)	Ambulance services
+6)	cleaning staff
+
+
+Encapsulation is wrapping up of properties and behaviour which are important.
+Benefits of encapsulation is data safety and it organizes related methods.
+
+Hospital has to hide details of the patient or patient records as they are personal and confidential so all the details of patients and their treatment 
+history is encapsulated and it can be accessed only by the administration staff.
+
+
+3.Given an entity named TrafficSignal, explain Polymorphism with respect to it. 
+
+
+
+Polymorphism: In simple words, polymorphism means an object taking different forms.
+
+In traffic signals, there are many types of signals which have different meaning to it. Like red signal indicates to stop the vehicle, yellow signal indicates to slow down the vehicle as it will change to red signal and green signal indicates to cross the signal. There are directions in the signal too which shows us the directions in which we can go and in some traffic signals there is a timer too. In this way traffic signal has many forms.
+
+
+ 
+4.Given an entity named BroadBandConnection, explain inheritance with respect to it. 
+
+
+Inheritance: When a class derives from another class is called inheritance. The child class will inherit all the public and protected properties and 
+methods from the parent class. In addition, it can have its own properties and methods.
+
+Broadband connection has several high speed transmission technologies such as:
+1)	DSL
+2)	Cable Modem
+3)	BPL
+4)	Fiber
+5)	Satellite
+6)	Wireless
+So here BroadBandConnection is the class and DSL, BPL, Cable Modem, Fiber, Satellite & Wireless are the child class which inherits the properties of 
+BroadBandConnection
+
+
+
+
+5.Given an entity named MobilePhone, identify its static & dynamic attributes. 
+
+Static Attributes:
+
+1)	Battery
+2)	OS
+3)	Camera
+4)	Processor
+5)	Embedded memory
+6)	SIM Slot
+7)	Hardware sensors
+
+
+Dynamic Attributes:
+
+1)	Wallpaper & Themes
+2)	Display settings
+3)	Sound
+4)	WIFI and cellular settings
+
