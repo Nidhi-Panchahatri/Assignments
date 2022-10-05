@@ -1,0 +1,120 @@
+ASSIGNMENT DAY-1
+
+1.Write a pseudocode to determine whether a person is eligible to vote or not given his/her age. The voting eligibility criteria is that the person’s age must be >= 18. 
+
+Psuedocode:
+
+Take a number 
+If age >= 18
+Print “the person is eligible to vote”
+Else
+Print ” he is not eligible”
+
+Algorithm:
+1.	Start
+2.	Take a number as input
+3.	Check if the number is greater than or equal to 18
+4.	Display if the person is eligible to vote
+5.	End 
+
+ 
+2. Write an algorithm to determine whether a number is a prime number or not. 
+ 
+Pseudocode:
+Input num
+Initialize variable temp=0
+For loop=2 to num/2
+
+
+
+Algorithm:
+
+1.	take num as input
+2.	initialize temp to 0
+3.	iterate for loop from 2 to num/2
+4.	if num is divisible by loop then increment temp
+5.	if temp is equal t 0 
+print “num is a prime number”
+         else
+            print “num is not a  prime number”
+6.	End
+
+
+ 
+3.Write a pseudocode to reverse the digits of a number. 
+
+Pseudocode:
+
+Input num
+Reverse=0
+While (num>0) then
+ remainder=num %10
+ reverse=(remainder*10)+remainder
+ num=num/10
+end while 
+print “reverse of number:”, remainder
+
+algorithm:
+1.	Start
+2.	Input num n and initialize reverse=0
+3.	Iterate while loop for n>0
+4.	Divide n by 10 and get remainder
+5.	Reverse=(remainder*10)+remainder
+6.	Divide n by 10
+7.	End whilw
+8.	Print reverse of num
+9.	stop
+
+ 
+4.Write an algorithm to find the factorial of a given number. 
+
+Pseudocode:
+
+Input num 
+i=1, fact=1
+for (i=1, i<num;i++ ) 
+   fact=fact*i
+print “ fact of number”
+
+
+
+
+Algorithm:
+
+1.	start
+2.	read a number n
+3.	initialize i=1 and fact=1
+4.	if i is less than n then goto step 5 else go to step 8
+5.	calculate fact, fact=fact*1
+6.	increment I by 1
+7.	print fact of number 
+8.	stop
+
+
+ 
+5.Write a pseudocode to count the number of vowels in the string CITIUSTECH. 
+
+Pseudocode :
+
+Vowels=o
+Print “enter string”
+Str[]=CITIUSTECH
+For (int i=0;str[i];i++)
+  If (str[i]=”A”| str[i]=”E”| str[i]=”I”| str[i]=”O”| str[i]=”U”)
+Vowels++
+Print vowels
+
+ 
+Algorithm:
+
+1.	start
+2.	initialize vowels=0
+3.	input string CITIUSTECH
+4.	iterate for loop over str[]
+5.	if str[]= ”A”|”E”|”I”|”O”|”U”
+6.	increments vowels by 1
+7.	print vowels
+8.	end 
+
+
+
