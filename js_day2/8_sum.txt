@@ -1,0 +1,17 @@
+// 8.	Write a JS function which returns the sum of any number of arguments passed. 
+// If no arguments are passed, the function must return a zero.
+
+
+function addition(){
+    console.log(arguments);
+    var sum=0;
+    for( var i=0; i<arguments.length;i++)
+{
+    sum+=arguments[i];
+}
+return sum;
+
+}
+console.log(addition(3,5));
+console.log(addition(3,4,51,6,7));
+console.log(addition(2,5,2));

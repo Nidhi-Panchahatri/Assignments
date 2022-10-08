@@ -1,0 +1,12 @@
+// 3.	Write a standard JS function which takes variable number of arguments and prints each argument on the screen and also the number of arguments passed.
+
+function show(...args) {
+
+   for (const element of args) {
+    console.log(element);
+   }
+   console.log(`The number of argumnets passed : ${args.length}`);
+}
+
+
+console.log(show(1,2,3,4,5,6));

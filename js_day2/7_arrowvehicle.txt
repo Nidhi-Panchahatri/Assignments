@@ -1,0 +1,28 @@
+// 7.	Pass the object created in assignment 5 to an arrow function. The function must return a string which contains the vehicleid, brand, ,model, variant & speed.
+
+
+vehicle = {
+    vehicleid: 123, brand: 'swift', model: '2000', variant: '4-wheeler', specification: {
+        firstGear: function () {
+            console.log("vehicle is in first gear");
+        },
+        secondGear: function () {
+            console.log("vehicle in second gear");
+
+        },
+        maxSpeed: 60,
+        changeGear: function () {
+            console.log(this.firstGear, this.secondGear);
+        },
+    },
+}
+const display=(vehicle)=>{
+    console.log(`the vehicle id is ${vehicle.vehicleid}`);
+    console.log(`the brand is ${vehicle.brand}`);
+    console.log(`the model is ${vehicle.model}`);
+    console.log(`the variant is ${vehicle.variant}`);
+
+    // vehicle.specification.changeGear();
+    console.log(`the max speed is ${vehicle.specification.maxSpeed}`);
+}
+display(vehicle);
