@@ -1,0 +1,91 @@
+
+2.	Refactor the previous assignment to include the following: 
+a.	When the user presses the tab key in each textbox, perform the check as mentioned above. 
+b.	Write JS code to validate each key inputted in each textbox and display an error message beneath each textbox if a space character is detected in username or password. 
+c.	As long as the username and password textboxes are empty, disable the button. The button must be enabled only when both textboxes contain text. 
+
+
+
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    username : <input type="text" placeholder="Enter user name" id="username">
+    <br><br>
+    password : <input type="password" placeholder="Enter password" id="password">
+    <br><br>
+    <input type="submit" id="button" value="Sign In" onclick="Login()"><br><br>
+    <br><br><br>
+    <h3 invalid Username id='invalidMessege' style="color: red ;"></h3>
+    <h3 invalid password id='invalidMessege1' style="color: red ;"></h3>
+    
+    <script src="Q2.JS"></script>
+</body>
+</html>
+
+
+JS:
+
+
+document.getElementById("username").addEventListener("click",function(){
+    let username=document.getElementById("username").value;
+    let invalidMessage=document.getElementById("invalidMessage");
+    for(let i=0;i<username.length;i++){
+        if(username.charAt(i)===" " || username ==="citiustech"){
+            invalidMessage.innerHTML="invalid credentials";
+    
+       }
+        else{
+            invalidMessage.innerHTML=" ";
+        }
+    }
+    
+    })
+    document.getElementById("password").addEventListener("click",function(){
+        let password=document.getElementById("password").value;
+        // let invalidMessage1=document.getElementById("invalidMessage1");
+        for(let i=0;i<password.length;i++){
+           if(password.charAt(i)===" "|| password ==="citiustech"){
+            let invalidMessage1=document.getElementById("invalidMessage1");
+               invalidMessage1.innerHTML="invalid credentials";
+       
+           }
+           else{
+               invalidMessage1.innerHTML=" ";
+           }
+        }
+       })
+
+       if (username.length=="")
+       {
+           
+           document.getElementById("button").Enabled = true;
+       }
+       else
+       {
+       
+           document.getElementById("button").Enabled = false;
+    
+       }
+
+       let invalidMessage=document.getElementById("invalidMessage");
+
+      function Login(){
+        let Uname=document.getElementById("username").value;
+        let Password=document.getElementById("password").value;
+        // let invalidMessage=document.getElementById("invalidMessage");
+        // let invalidMessage1=document.getElementById("invalidMessage1");
+        if(Uname ==="CITIUSTECH"&& Password ==="CITIUSTECH")
+        {
+            window.open("https://www.google.co.in/");
+       }
+        else
+        {
+           
+            invalidMessage.innerHTML="invalid creditials";
+            
+        }}
