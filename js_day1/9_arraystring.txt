@@ -1,0 +1,17 @@
+var inputarr=[];
+var size=5;
+
+for(var a=0; a<size; a++){
+    inputarr[a]=prompt("enter array string"+" "+ (a+1));
+}
+console.log(inputarr);
+const arr=[];
+for(element of inputarr){
+    str=element.split('').reverse().join('');
+    const capitalized =str.charAt(0).toUpperCase()+str.slice(1);
+    str1=capitalized.split('').reverse().join('');
+    arr.push(str1);
+}
+inputarr=[];
+inputarr=inputarr.concat(arr);
+console.log(inputarr);

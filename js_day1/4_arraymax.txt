@@ -1,0 +1,13 @@
+document.write('---------Array of 10 numbers & first two max numbers----------<br>')
+var inputarr=[];
+var size=10;
+for(var a=0;a<size;a++)
+{
+    inputarr[a]=prompt("Enter the" + " "+(a+1)+" "+ "array element");
+
+}
+console.log(inputarr);  
+inputarr.sort(function(a,b){return b-a}); 
+console.log(inputarr.sort());
+console.log(inputarr[a-1]);
+console.log(inputarr[a-1-1]);
