@@ -1,0 +1,83 @@
+1.	Create a JSON file with some sample data & save it on your local drive. Using XmlHttpRequest, display information from the file in a table format. 
+
+
+Program:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function loadfile(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("get", "Question1.json", true);
+            xhttp.send();
+             xhttp.onreadystatechange = function() {
+              var tbody = document.getElementById("demo").querySelector("tbody");
+              tbody.innerHTML = "";
+            if (this.readyState == 4 && this.status == 200) {
+              JSON.parse(this.responseText).forEach(function(data, index){
+                tbody.innerHTML += "<tr><td>"+ data.id + "</td><td>" + data.name + "</td><td>"+ data.price +"</td></tr>";
+              });
+            }
+         };
+       
+        
+            }
+        </script>
+        <style>
+            table,td,tr{border:2px solid black;}
+        </style>
+    </head>
+    <body>
+        <button onclick="loadfile()">loadData</button>
+     <table id="demo">
+       <thead>
+        <tr>
+            <td> Id</td>
+            <td>Name</td>
+            <td>Price</td>
+        </tr>
+       </thead>
+       <tbody >
+
+       </tbody>
+     </table>
+    </body>
+</html>
+
+
+
+
+
+JSON:
+
+[
+    {
+        "id": 101,
+        "name":"Lipstick",
+        "Brand":"MAC",
+        "price":2000
+    },
+
+    {
+        "id":202,
+        "name":"Television",
+        "Brand":"sony",
+        "price":30000
+    },
+
+    {
+        "id":303,
+        "name":"Mobile Phone",
+        "Brand":"iPhone",
+        "price":95000
+    },
+    {
+        "id":404,
+        "name":"Shoes",
+        "Brand":"Puma",
+        "price":2500
+    }
+]
+
+

@@ -1,0 +1,56 @@
+5.	Add another button which makes a PUT request to the same URL. In this case, the name, username or email might be modified. Pass the entered id as a query string. Check by hitting the same URL to see if the record was modified or not. 
+ 
+
+Program:
+
+<html>
+    <head>
+       
+    </head>
+    <body>
+        
+        <h3>Online JSON PUT</h3>
+        <input type="button" value="Put Request" onclick="JSONonlinePUT()">
+    
+        <script>
+            var data = {
+                "id": 11,
+                "name": "Nidhi Panchahatri",
+                "username": "NidhiP",
+                "email": "nidhi@citius.com",
+                "address": {
+                    "street": "satellite",
+                    "suite": " 49/2A",
+                    "city": "Bangalore",
+                    "zipcode": "560061",
+                    "geo": {
+                        "lat": "-21.3448",
+                        "lng": "69.1629"
+                    }
+                },
+                "phone": "9-532-1345 x56442",
+                "website": "lenstaa.org",
+                "company": {
+                    "name": "grohnus",
+                    "catchPhrase": "Multi-layered interface",
+                    "bs": "hardware e-markets"
+                }
+            }
+            
+            function JSONonlinePUT(){
+                var url = "https://jsonplaceholder.typicode.com/users";
+
+                // this is PUT request
+                fetch(url+"/?id="+data.id, {
+                    method: "PUT",
+                    body: JSON.stringify(data),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then( res => res.json()
+                                    .then(r => console.log("RECORD IS UPDATED!"),
+                                    console.log(data)));
+            }
+        </script>
+    </body>
+</html>
