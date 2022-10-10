@@ -21,8 +21,8 @@ HTML:
 </select>
 <br>
 <br>
-<select name="IndiaName" id="indiaCountry... Nidhi P">
-<select name="indiaName" id="indiaCountry" style="display: none;">
+<select name="IndiaName" id="indiaCountry style="display: none;">
+
     <option value="select city">Select city</option>
     <option value="bengluru">Bengluru</option>
     <option value="mumbai">mumbai</option>
@@ -30,7 +30,7 @@ HTML:
     <option value="jaipur">jaipur</option>
     <option value="hyderabad">hyderabad</option>
 </select>
-<!-- <select name="australiaName" id="australiaCountry... Nidhi P"></select> -->
+
 <select name="australiaName" id="australiaCountry" style="display:none;">
     <option value="select city">Select city</option>
     <option value="Sydney">Sydney</option>
@@ -39,7 +39,7 @@ HTML:
     <option value="perth">perth</option>
 </select>
 
-<!-- <select name="englandName" id="englandCountry... Nidhi P"></select> -->
+
 <select name="englandName" id="englandCountry" style="display:none;">
     <option value="select city">Select city</option>
     <option value="London">London</option>
