@@ -1,4 +1,4 @@
-<!-- 12.	Create an HTML5 page which makes a jQuery AJAX GET request to the above-mentioned URL & display all titles inside a dropdown list.  -->
+<!-- 2	Create an HTML5 page which makes a jQuery AJAX GET request to the above-mentioned URL & display all titles inside a dropdown list.  -->
 
 <!DOCTYPE html>
 <html>
