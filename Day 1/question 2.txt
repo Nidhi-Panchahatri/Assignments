@@ -1,0 +1,56 @@
+2.	Create an HTML5 page as follows: 
+a.	Two empty <div> elements. The id of each must be div1 and div2 respectively. 
+b.	Two textboxes without ids. 
+c.	Two textareas without ids. 
+d.	A button titled Apply Style to TextBoxes. When this button is clicked, draw a red border around each textarea. 
+e.	A button titled Apply Style to first div . When this button is clicked, write some text only inside the first <div> element. 
+f.	A button titled Say Hello. When this button is clicked, each textbox and textarea must contain the text HELLO. 
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('textarea').addClass('myborder');
+            });
+        
+       
+            $('#btn2').click(function(){
+                $('#div1').text('This is inside only first div element');
+            });
+        $('#btn3').click(function(){
+            $('input').val('HELLO')
+            $('textarea').val('HELLO')
+        });
+
+        })
+    
+    </script>
+    <style>
+        .myborder{
+            border: 2px solid red;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    
+    <input type="text">
+    <textarea id="txt1"></textarea>
+    <textarea id="txt2"></textarea>
+    <button id="btn1">apply style to boxes</button>
+    <button id="btn2">apply style to first div</button>
+    <button id="btn3">Say hello</button>
+</body>
+</html>
