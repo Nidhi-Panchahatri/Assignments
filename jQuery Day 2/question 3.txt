@@ -1,4 +1,4 @@
-<!-- 8.	Create an HTML5 page with a jQuery accordian as follows:  -->
+<!-- 3.	Create an HTML5 page with a jQuery accordian as follows:  -->
 <!DOCTYPE html>
 <html>
 
