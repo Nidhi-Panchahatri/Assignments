@@ -1,0 +1,48 @@
+<!-- 8.	Create an HTML5 page with a jQuery accordian as follows:  -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+</head>
+
+<body>
+    <div style="background-color: rgb(198, 198, 142); padding: 20px; padding-right: 0px;">
+        <h1>The Accordion</h1>
+        <div id="acc">
+            <h1>C#</h1>
+            <div>
+                <p>C# is a general object-oriented programming (OOP) language for networking and
+                    Web development. C# is specified as a common language infrastructure (CLI) language.</p>
+            </div>
+
+            <h1>LINQ</h1>
+            <div>
+                <p>anguage Integrated Query is a Microsoft .NET Framework component that adds native
+                    data querying capabilities to .NET languages, originally released as a major part of .NET
+                    Framework 3.5 in 2007. </p>
+            </div>
+
+            <h1>jQuery UI</h1>
+            <div>
+                <p>jQuery UI is a curated set of user interface interactions, effects, widgets, and themes
+                    built on top of the jQuery JavaScript Library. Whether you're building highly interactive web
+                    applications or you just need to add a date picker to a form control, jQuery UI is the perfect
+                    choice. </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $('#acc').accordion();
+        });
+    </script>
+</body>
+
+</html>

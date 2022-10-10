@@ -1,0 +1,50 @@
+<!-- 7.	Create an HTML5 page with the following UI:  -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <style>
+        .ui-widget-header,
+        .ui-button,
+        .ui-state-default {
+            background-color: rgb(194, 21, 21);
+            color: rgb(208, 17, 17);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style=" height: 150px; width: 150px; background-color: rgb(184, 184, 120); padding : 20px;"><br>
+        <p>
+        <h2>The Dialog</h2>
+        </p>
+        <button id="btn">click me!</button>
+    </div>
+
+    <div id="d1">Are yoo sure?</div>
+    <script>
+        $(function () {
+            $('#d1').dialog({
+                autoOpen: false,
+                buttons: {
+                    'Yes I do!': function () { $(this).dialog("close"); },
+                    'NO': function () { }
+                },
+                title: "Attention!!"
+            });
+            $('#btn').click(function () {
+                $('#d1').dialog("open");
+            })
+        });
+    </script>
+</body>
+
+</html>

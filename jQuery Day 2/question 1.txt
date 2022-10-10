@@ -1,0 +1,29 @@
+1.	Create an HTML5 page with 3 hyperlinks. Using jQuery set the href attribute of each hyperlink to http://www.google.com, http://www.gmail.com & http://www.makemytrip.com respectively. 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('a').hover(function(){
+                $('#a1').attr('href',"https://www.google.com/");
+                $('#a2').attr('href',"http://www.gmail.com");
+                $('#a3').attr('href',"http://www.makemytrip.com ");
+            });
+        })
+    </script>
+</head>
+<body>
+    <a id="a1" target="_blank">Google</a> <br><br>
+    <a id="a2" target="_blank">Gmail</a><br><br>
+    <a id="a3" target="_blank">Make my trip</a>
+</body>
+</html>
