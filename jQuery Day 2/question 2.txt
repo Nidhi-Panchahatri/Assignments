@@ -1,4 +1,4 @@
-<!-- 7.	Create an HTML5 page with the following UI:  -->
+<!-- 2.	Create an HTML5 page with the following UI:  -->
 
 
 <!DOCTYPE html>
