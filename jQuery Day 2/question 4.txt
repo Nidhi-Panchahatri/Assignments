@@ -1,4 +1,4 @@
-<!-- 9.	Create an HTML5 page with the following: 
+<!-- 4.	Create an HTML5 page with the following: 
 a.	Add jQuery code that fades in the text I am a hidden secret whenever a button is clicked. 
 b.	Change your jQuery code so it slides down the text instead of fading it in. 
 c.	Change the button text to say Click me to toggle a hidden secret! and make the text toggle between fading in and out each time it is clicked.  -->
